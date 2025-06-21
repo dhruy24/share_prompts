@@ -4,6 +4,7 @@ import PromptCard from "./PromptCard"
 
 const PromptCardList = ({data, handleTagClick}) =>{
   //console.log("data", data)
+  //console.log("data", data)
   return(
     <div className="mt-6 prompt_layout">
       {data?.map((post)=>(
@@ -19,6 +20,7 @@ const PromptCardList = ({data, handleTagClick}) =>{
 
 
 function Feed() {
+  console.log("Feed component rendered");
   const [searchText, setSearchText] = useState('');
   const [posts, setPosts] = useState([])
   function handleSearchChange(){
